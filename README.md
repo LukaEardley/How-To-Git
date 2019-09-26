@@ -44,4 +44,25 @@
 
 #### As an alternative the aforementioned commands can be combined into a single command
 
-1. Use the command `gitl
+1. Use the command `git commit -am "<the-commit-message-you-want>"`
+
+## Pushing your code to GitHub
+
+1. Use the command `git push` to push the changes on a branch to GitHub
+
+## Pushing a new branch of code to GitHub
+
+1. If you try to push a branch to GitHub that only exists on your comnputer then gitbash will recommend the command `git push --set-upstream origin <the-name-of-your-branch>`.
+2. Just use this command as it is the only way to push your new branch to GitHub
+
+## Pulling code 
+
+1. If the branch you have exists on your computer then make sure that branch is checked out and use the command `git pull` to pull the new changes of that branch to your computer.
+2. If the branch you want only exists on GitHub and not on your computer then use the command `git fetch`. This will fetch all new branches and it does not matter what branch you have checked out when you use this command.
+3. You will now be able to checkout the branch that just got fetched from GitHub
+
+##### If you have made changes to a branch accidentally and need to pull or push or checkout another branch you can use the command `git reset --hard`. This will discard any changes made to that branch. Only use this command if you did not want to keep the changes you made.
+
+##### If you try to checkout a different branch or push/pull on a branch with changes gitbash will not let you do this until you have decided what to do with them. Either commit your code before doing this or reset the branch as stated above ONLY IF YOU WANT TO DISGARD THOSE CHANGES
+
+
